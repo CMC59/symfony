@@ -3,3 +3,15 @@ controllers:
         path: ../src/Controller/
         namespace: App\Controller
     type: attribute
+# config/routes.yaml
+
+# the "app_lucky_number" route name is not important yet
+app_lucky_number:
+    path: /lucky/number
+    controller: App\Controller\LuckyController::number
+
+# the "meteo_app" route name is not important yet
+app_meteo:
+    path: /meteoinfo
+    controller: App\Controller\OpenWeatherController::infometeo
+
